@@ -1,0 +1,32 @@
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+    center/15000%;
+}
+.ripple:active {
+  background-color: #6b95b7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.serchEl:not(:last-child) {
+  margin-bottom: 7px;
+}
+.deletBtn {
+  margin-left: 15px;
+  float: right;
+}
+.serchEl {
+  min-width: 250px;
+}
+
+.serchEl::before {
+  content: '•';
+  color: #47a7f5;
+  margin-left: 15px;
+  margin-right: 15px;
+}
